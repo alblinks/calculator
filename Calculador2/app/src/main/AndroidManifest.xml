@@ -17,10 +17,6 @@
         </activity>
         <activity android:name=".Calculate">
 
-            <intent-filter>
-
-            </intent-filter>
-
         </activity>
     </application>
 

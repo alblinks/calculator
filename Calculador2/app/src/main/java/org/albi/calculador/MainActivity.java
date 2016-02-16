@@ -1,5 +1,6 @@
 package org.albi.calculador;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity
 {
     private Button irButton;
+    private Activity THIS = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +30,8 @@ public class MainActivity extends AppCompatActivity
                 Toast.makeText(getApplicationContext(), "Proceding to calculator", Toast.LENGTH_SHORT).show();
 
                 //go to Activity calculate by explicit intent
-                Intent calculateIntent = new Intent(Calculate.class);
+                Intent calculateIntent = new Intent(THIS, Calculate.class);
+                startActivity(calculateIntent);
 
             }
     });

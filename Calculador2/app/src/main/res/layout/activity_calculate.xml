@@ -26,7 +26,8 @@
         android:id="@+id/number1"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/textView2"
-        android:layout_marginTop="225dp" />
+        android:layout_marginTop="225dp"
+        android:text="Número 1" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -36,5 +37,15 @@
         android:id="@+id/number2"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="347dp" />
+        android:layout_marginTop="347dp"
+        android:text="Número 2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginBottom="53dp" />
 </RelativeLayout>
