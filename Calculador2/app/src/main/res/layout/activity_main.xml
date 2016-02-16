@@ -16,12 +16,21 @@
         android:id="@+id/textView" />
 
     <Button
-        android:layout_width="164dp"
-        android:layout_height="100dp"
-        android:text="Ir1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IR 1"
         android:id="@+id/ir1"
-        android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IR 2"
+        android:id="@+id/ir2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/ir1"
+        android:layout_alignEnd="@+id/ir1" />
 
 
 </RelativeLayout>

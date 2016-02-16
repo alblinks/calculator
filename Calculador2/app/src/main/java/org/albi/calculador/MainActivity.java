@@ -11,7 +11,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
 {
-    private Button irButton;
+    private Button irButton1;
+    private Button irButton2;
     private Activity THIS = this;
 
     @Override
@@ -21,8 +22,9 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //find Button ir1
-        this.irButton = (Button) findViewById(R.id.ir1);
-        irButton.setOnClickListener(new View.OnClickListener() {
+        this.irButton1 = (Button) findViewById(R.id.ir1);
+        this.irButton2 = (Button) findViewById(R.id.ir2);
+        irButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             //event executed on click
             public void onClick(View view) {
@@ -34,7 +36,14 @@ public class MainActivity extends AppCompatActivity
                 startActivity(calculateIntent);
 
             }
-    });
+        });
+        irButton2.setOnClickListener(new  View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Log.d("org.albi.calculador", "push ir2"); //Log message
+            }
+
+        });
 
 
 
